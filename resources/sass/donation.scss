@@ -1,0 +1,184 @@
+.buttonex {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    
+
+    &.learn-more {
+      width: 12rem;
+      height: auto;
+      .circle {
+        transition: all, 0.45s, cubic-bezier(0.65,0,.076,1);
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 3rem;
+        height: 3rem;
+        background: blue;
+        border-radius: 1.625rem;
+        
+        .icon {
+          transition: all, 0.45s, cubic-bezier(0.65,0,.076,1);
+          position: absolute;
+          margin: 0;
+          background: white;
+          &.arrow {
+            transition: all, 0.45s, cubic-bezier(0.65,0,.076,1);
+            left: 0.625rem;
+            width: 1.125rem;
+            height: 0.125rem;
+            background: none;
+            // border: 2px solid red;
+            &::before {
+              position: absolute;
+              content: '';
+              top: -0.25rem;
+              right: 0.0625rem;
+              width: 0.625rem;
+              height: 0.625rem;
+              border-top: 0.125rem solid #fff;
+              border-right: 0.125rem solid #fff;
+              transform: rotate(45deg);
+            }
+          }
+        }
+      }
+      .button-text {
+        transition: all, 0.45s, cubic-bezier(0.65,0,.076,1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0.75rem 0;
+        margin: 0 0 0 1.85rem;
+        color: blue;
+        font-weight: bolder;
+        line-height: 1.6;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+    &:hover {
+      .circle {
+        width: 100%;
+        .icon {
+          &.arrow {
+          background: white;
+          transform: translate(1rem, 0);
+          }
+        }
+      }
+      .button-text {
+        color: white;
+      }
+    }
+  }
+
+
+  .btn0{
+    cursor:pointer;
+      position:relative;
+      padding:10px 20px;
+      background:white;
+      font-size:25px;
+      border-top-right-radius:10px;
+      border-bottom-left-radius:10px;
+      transition:all 1s;
+      color: blue;
+      font-weight: bolder;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: 5%;
+      // margin-left: 40%;
+      &:after,&:before{
+        content:" ";
+        width:10px;
+        height:10px;
+        position:absolute;
+        border :0px solid blue;
+        transition:all 1s;
+        }
+      &:after{
+        top:-1px;
+        left:-1px;
+        border-top:5px solid blue;
+        border-left:5px solid blue;
+      }
+      &:before{
+        bottom:-1px;
+        right:-1px;
+        border-bottom:5px solid blue;
+        border-right:5px solid blue;
+      }
+      &:hover{
+        border-top-right-radius:0px;
+      border-bottom-left-radius:0px;
+        // background:rgba(0,0,0,.5);
+        // color:white;
+        &:before,&:after{
+          
+          width:100%;
+          height:100%;
+          // border-color:white;
+        }
+      }
+    }
+
+
+    .btn1{
+      cursor:pointer;
+        position:relative;
+        padding:10px 20px;
+        background:rgba(255, 255, 255, 0.276);
+        font-size:17px;
+        border-top-right-radius:10px;
+        border-bottom-left-radius:10px;
+        transition:all 1s;
+        // margin-left: 45%;
+        color: blue;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 15%;
+        &:after,&:before{
+          content:" ";
+          width:10px;
+          height:10px;
+          position:absolute;
+          border :0px solid blue;
+          transition:all 1s;
+          }
+        &:after{
+          top:-1px;
+          left:-1px;
+          border-top:1px solid blue;
+          border-left:1px solid blue;
+        }
+        &:before{
+          bottom:-1px;
+          right:-1px;
+          border-bottom:1px solid blue;
+          border-right:1px solid blue;
+        }
+        &:hover{
+          border-top-right-radius:px;
+        border-bottom-left-radius:0px;
+          // background:rgba(0,0,0,.5);
+          // color:white;
+          &:before,&:after{
+            
+            width:100%;
+            height:100%;
+            // border-color:white;
+          }
+        }
+      }

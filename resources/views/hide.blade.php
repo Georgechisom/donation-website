@@ -213,7 +213,7 @@
 } --}}
 
 
-<div class="tiles">
+{{-- <div class="tiles">
     <a class="tile">
       <img src="{{ asset('images/projet1.jpg') }}" class="" />
       <div class="details">
@@ -227,9 +227,9 @@
       <p> We have saved over <strong style="color: blue">5,000 infants</strong>  from dying by expanding community support </p>
       <p> We are committed to ensure that infant children get necessary aid and support </p>
     </div>
-</div>
+</div> --}}
 
-<div class="tiles1">
+{{-- <div class="tiles1">
     <a class="tile">
       <img src="{{ asset('images/projet.jpg') }}" class="" />
       <div class="details">
@@ -243,9 +243,9 @@
       <p> Provision of <strong style="color: blue"> above 1500 obstetrical care centers </strong> to reduce maternal mortality </p>
       <p> Our goal is to provide pregnant women with the best medical, nursing, and health-related services. </p>
     </div>
-</div>
+</div> --}}
 
-<div class="mediaqueries">
+{{-- <div class="mediaqueries">
     .tiles {
         width: 80%;
         text-align: center;
@@ -282,7 +282,7 @@
     .title {
         font-size: 15px !important;
     }
-</div>
+</div> --}}
 
 {{-- #container22 {
   display: flex;
@@ -290,3 +290,42 @@
   width: 100vw;
   height: 60vh;
 }  --}}
+
+
+{{-- our projects --}}
+  {{-- <div class="container overflow-hidden">
+    <div>
+      <div class="compro"> Our Community Projects </div>
+      <div class="compropro">
+
+        <div class="neonatalstart" data-aos="fade-up">
+          <div class="neonatals">
+            <p class="neonatals11" data-aos="zoom-in">
+              <span class="neonatals111"> Neonatal Project </span> 
+              Since 2000s infant mortality have been an age long problem, but Divineone community provision of technological advances, enhanced understanding of newborn physiology, improved sanitation practices, and development of specialized units for neonatal intensive care, have led to a significant decline in infant mortality.
+            </p> 
+          </div>
+          <div class="neonatals2">
+            <p data-aos="fade-up"> We have saved over <strong style="color: blue">5,000 infants</strong>  from dying by expanding community support. </p>
+            <p data-aos="fade-up"> We are committed to ensure that infant children get necessary aid and support </p>
+          </div>
+        </div>
+
+        <div class="neonatalstart1" data-aos="fade-up">
+          <div class="neonatalsecond">
+            <p class="neonatals11s" data-aos="zoom-in">
+              <span class="neonatals111s"> Maternal Project </span> 
+              Divineone community have builted obstetrical care centers, educated and provided resources to women in order to gained access to medical, nursing, and health-related services. The global maternal mortality has fallen by about 44%, which represented a decline of about 2.3 percent annually over period from 2020 to 2023.
+            </p> 
+          </div>
+          <div class="neonatals2">
+            <p data-aos="fade-up"> Provision of <strong style="color: blue"> above 1500 obstetrical care centers </strong> to reduce maternal mortality. </p>
+            <p data-aos="fade-up"> 
+              Our goal is to provide pregnant women with the best medical, nursing, and health-related services. 
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div> --}}

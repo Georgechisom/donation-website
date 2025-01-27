@@ -1,10 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="firstdonationmattersall">
+
+<div class="mt-32 md:mt-36">
     <div class="donationmatters">
-      <H1 class="donationmatterstext" data-aos="zoom-in">
-        Why Your Donation Matters
+      <H1 class="bigabouttext text-xl md:text-3xl capitalize py-20 px-8 md:py-40 lg:py-60">
+        significance of donations
       </H1>
     </div>
     
@@ -82,7 +83,7 @@
 <div class="container">
     <div class="donateme">
         <span class="joinjoinjoin " data-aos="fade-up">We amplify every donation! </span>
-        <hr style="width: 20%; color: blue; font-weight: bolder; border: 1.5px solid blue; margin-left: 40%">
+        <hr class="my-3 w-52 md:w-72 lg:w-80 mx-auto" style="color: blue; font-weight: bolder; border: 1.5px solid blue;">
         <p class="text-black fw-bold p-1" data-aos="fade-up">
             Divineone Community is a charitable institution. Our work is supported solely by public donations, corporate sponsorships and raised funds. If you share our philosophy, please donate in support of our cause. <strong class="donationwrites"> We're a partner, not just a platform.</strong>
         </p>
@@ -91,10 +92,12 @@
             Ready for your nonprofit to join the Divineone community?
         </p>
 
-        <hr style="width: 20%; color: blue; font-weight: bolder; border: 1.5px solid blue; margin-left: 40%" data-aos="fade-up">
-        <button class="joinjoinjoinbut" data-aos="fade-up">
+        <hr class="my-3 w-52 md:w-72 lg:w-80 mx-auto" style="color: blue; font-weight: bolder; border: 1.5px solid blue;" data-aos="fade-up">
+        <a href="{{ route('donationplan') }}" class="text-decoration-none">
+          <button class="joinjoinjoinbut" data-aos="fade-up">
             Divineone Community
-        </button>
+          </button>
+        </a>
     </div>
 </div>
 
@@ -442,9 +445,10 @@
       <div class="navigations">
         <a href="{{ route('donations') }}" class="text-decoration-none text-white" data-aos="fade-up"> Home </a>
         <a class="text-decoration-none text-white" href="{{ route('about.us') }}" data-aos="fade-up"> About Us </a>
+        <a class="text-decoration-none text-white" href="{{ route('project') }}" data-aos="fade-up"> True Projects </a>
         <a class="text-decoration-none text-white" href="{{ route('donation.matters') }}" data-aos="fade-up">Why Your Donation Matters</a>
 
-        <div data-aos="fade-up">
+        {{-- <div data-aos="fade-up">
           <!-- Button trigger modal -->
           <button type="button" class="btn text-white thirdofmodal" data-bs-toggle="modal" data-bs-target="#exampleModal">
             How Divineone Community Works
@@ -488,7 +492,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> --}}
         
       </div>
     </div>
@@ -728,7 +732,7 @@
 
   </div>
   <div class="footer3 text-center">
-    <div >&copy; copyright 2023 ~ Divineone Community </div>
+    <div >&copy; copyright 2025 ~ Divineone Community </div>
   </div>
 </div>
 

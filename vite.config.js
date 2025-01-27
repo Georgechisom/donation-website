@@ -13,6 +13,8 @@ export default defineConfig({
                 'resources/fontawesome/js/all',
                 'resources/css/partners.css',
                 'resources/css/media.css',
+                'resources/css/app.css',
+                'resources/js/donation.js',
             ],
             refresh: true,
         }),

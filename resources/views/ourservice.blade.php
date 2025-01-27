@@ -1,14 +1,12 @@
 @extends('layouts.app')
 @section('content')
 
-<div class="firstbigserviceus">
+<div class="mt-32 md:mt-36">
     <div class="bigserviceus">
-      <H1 class="bigservicetext" data-aos="zoom-in">
+      <H1 class="bigservicetext text-xl md:text-3xl capitalize py-20 px-8 md:py-40 lg:py-60" data-aos="zoom-in">
         Our Services
     </H1>
     </div>
-    
-    
 </div>
 
 {{-- modal --}}
@@ -91,24 +89,47 @@
 
 
 {{-- our corparate partners  --}}
-<div class="bg-white24">
+<div class="bg-white24 pb-10">
     <div class="wefirstneedyou"> 
-      <div class="weneedyou2" data-aos="fade-up">Companies Partnership </div>
+      <div class="text-2xl md:text-3xl capitalize font-bold my-3 text-center" data-aos="fade-up">Companies Partnership </div>
       
-      <div class="companieslogo">
-        <img src="{{ asset('images/care.jpg') }}" class="servicerpics smallerlogo2" data-aos="fade-up"/>
-        <img src="{{ asset('images/CompaniesPageLogo2_EbayForCharityl.png') }}" class="servicerpics" data-aos="fade-up"/>
-        <img src="{{ asset('images/unicef.png') }}" class="servicerpics" data-aos="fade-up" />
-        <img src="{{ asset('images/CompassionInternationalLogo.png') }}" class="servicerpics" data-aos="fade-up"/>
-        <img src="{{ asset('images/CompaniesLogo1_21stCenturyFox.png') }}" class="servicerpics" data-aos="fade-up"/>
-        <img src="{{ asset('images/habitat.png') }}" class="servicerpics" data-aos="fade-up"/>
-
-        <img src="{{ asset("images/tetecompany.png") }}" alt="company" class="servicerpics" data-aos="fade-up">
-        <img src="{{ asset("images/eesecondcompany.png") }}" alt="company" class="servicerpics" data-aos="fade-up">
-        <img src="{{ asset("images/DirectRelief.png") }}" alt="company" class="servicerpics" style="margin-top: 25%;" data-aos="fade-up">
-        <img src="{{ asset("images/tthridcompany.png") }}" alt="companye" class="servicerpics" data-aos="fade-up">
-        <img src="{{ asset("images/efirstcompany.png") }}" alt="company" class="servicerpics" data-aos="fade-up">
-        <img src="{{ asset("images/redcross.png") }}" alt="company" class="servicerpics" style="margin-top: 45%;" data-aos="fade-up">
+      <div class='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mt-10 gap-2 md:gap-2 px-4 pb-4'>
+        <div class='border-2 border-skyText flex items-center justify-center px-6 py-2 cursor-pointer group' data-aos="fade-up">
+            <img src="{{ asset('images/newcompany2.png')}}" alt="partner" class='w-36 h-auto group-hover:opacity-50' />
+        </div>
+        <div class='border-2 border-skyText flex items-center justify-center px-6 py-2 cursor-pointer group' data-aos="fade-up">
+            <img src="{{ asset('images/newcompany6.png')}}" alt="partner1" class='w-36 h-auto group-hover:opacity-50' />
+        </div>
+        <div class='border-2 border-skyText flex items-center justify-center px-6 py-2 cursor-pointer group' data-aos="fade-up">
+            <img src="{{ asset('images/newcompany7.png')}}" alt="partner2" class='w-36 h-auto group-hover:opacity-50' />
+        </div>
+        <div class='border-2 border-skyText flex items-center justify-center px-6 py-2 cursor-pointer group' data-aos="fade-up">
+            <img src="{{ asset('images/newcompany8.png')}}" alt="partner3" class='w-36 h-auto group-hover:opacity-50' />
+        </div>
+        <div class='border-2 border-skyText flex items-center justify-center px-6 py-2 cursor-pointer group' data-aos="fade-up">
+            <img src="{{ asset('images/newcompany9.png')}}" alt="partner4" class='w-36 h-auto group-hover:opacity-50' />
+        </div>
+        <div class='border-2 border-skyText flex items-center justify-center px-6 py-2 cursor-pointer group' data-aos="fade-up">
+            <img src="{{ asset('images/newcompany10.png')}}" alt="partner5" class='w-36 h-auto group-hover:opacity-50' />
+        </div>
+        <div class='border-2 border-skyText flex items-center justify-center px-6 py-2 cursor-pointer group' data-aos="fade-up">
+          <img src="{{ asset('images/newcompany1.png')}}" alt="partner6" class='w-36 h-auto group-hover:opacity-50' />
+        </div>
+        <div class='border-2 border-skyText flex items-center justify-center px-6 py-2 cursor-pointer group' data-aos="fade-up">
+          <img src="{{ asset('images/newcompany3.png')}}" alt="partner7" class='w-36 h-auto group-hover:opacity-50' />
+        </div>
+        <div class='border-2 border-skyText flex items-center justify-center px-6 py-2 cursor-pointer group' data-aos="fade-up">
+          <img src="{{ asset('images/newcompany4.png')}}" alt="partner8" class='w-36 h-auto group-hover:opacity-50' />
+        </div>
+        <div class='border-2 border-skyText flex items-center justify-center px-6 py-2 cursor-pointer group' data-aos="fade-up">
+          <img src="{{ asset('images/newcompany5.png')}}" alt="partner9" class='w-36 h-auto group-hover:opacity-50' />
+        </div>
+        <div class='border-2 border-skyText flex items-center justify-center px-6 py-2 cursor-pointer group' data-aos="fade-up">
+          <img src="{{ asset('images/CompaniesPageLogo2_EbayForCharityl.png')}}" alt="partner10" class='w-36 h-auto group-hover:opacity-50' />
+        </div>
+        <div class='border-2 border-skyText flex items-center justify-center px-6 py-2 cursor-pointer group' data-aos="fade-up">
+          <img src="{{ asset('images/DirectRelief.png')}}" alt="partner11" class='w-36 h-auto group-hover:opacity-50' />
+        </div>
       </div>
 
       <div class="mt-5 buttonexex" >
@@ -235,9 +256,10 @@
       <div class="navigations">
         <a href="{{ route('donations') }}" class="text-decoration-none text-white" data-aos="fade-up"> Home </a>
         <a class="text-decoration-none text-white" href="{{ route('about.us') }}" data-aos="fade-up"> About Us </a>
+        <a class="text-decoration-none text-white" href="{{ route('project') }}" data-aos="fade-up">True Projects</a>
         <a class="text-decoration-none text-white" href="{{ route('donation.matters') }}" data-aos="fade-up">Why Your Donation Matters</a>
 
-        <div data-aos="fade-up">
+        {{-- <div data-aos="fade-up">
           <!-- Button trigger modal -->
           <button type="button" class="btn text-white thirdofmodal" data-bs-toggle="modal" data-bs-target="#exampleModal">
             How Divineone Community Works
@@ -281,7 +303,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> --}}
         
       </div>
     </div>
@@ -521,7 +543,7 @@
 
   </div>
   <div class="footer3 text-center">
-    <div >&copy; copyright 2023 ~ Divineone Community </div>
+    <div >&copy; copyright 2025 ~ Divineone Community </div>
   </div>
 </div>
 

@@ -2,9 +2,9 @@
 
 @section('content')
 
-<div class="firstbigaboutus">
+<div class="mt-32 md:mt-36">
     <div class="bigaboutus">
-      <H1 class="bigabouttext" data-aos="zoom-in">
+      <H1 class="bigabouttext text-xl md:text-3xl capitalize py-20 px-8 md:py-40 lg:py-60">
         About Divineone Community
       </H1>
     </div>
@@ -81,47 +81,47 @@
 
 </div>
 
+{{-- about text --}}
 <div class="bigaboutfirstparapara">
     <div class="container bigaboutfirstpara">
-        <p data-aos="zoom-in">
-            <strong>Divineone</strong> was born and introduced to the world! A deep, organic passion and the common dream of a few like minded friends was its birthplace. Since then, Divineone community has continued its global rise in the education sector. This Community represents People for Urban and Divineone community is both proud and grateful to be thriving as a global, non profit organization.
+        <p>
+            <strong>Divineone</strong> was born and introduced to the world! A deep, organic passion and the common dream of a few like minded friends was its birthplace. Since then, Divineone community has continued its global rise in major humanitarian sectors. This Community represents people from cosmoliterian cities, Divineone community is both proud and grateful to be thriving as a global, non profit organization.
         </p>
     </div>
 </div>
 
-
+{{-- map --}}
 <div class="container">
-    <div class="mappigrid">
-        <div data-aos="zoom-in">
-                since 2020, we've helped raise more than <br>
-                <strong class="biggeryouare">$205M</strong> <br>
-                 from <br>
-                 <strong class="biggeryouare">1,403,157</strong> <br> 
-                 people like you who've supported <br>
-                  <strong class="biggeryouare">15,551</strong> <br>
-                   projects in <br>
-                   <strong class="biggeryouare">115+</strong> <br>
-                   countries
+    <div class="mappigrid grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-y-4 md:gap-y-0 gap-x-0 md:gap-x-4 py-4 md:py-8 px-4 md:px-8">
+        <div>
+          since 2020, we've helped raise more than <br>
+          <strong class="biggeryouare" data-aos="zoom-in">$205M</strong> <br>from <br>
+          <strong class="biggeryouare" data-aos="zoom-in">1,403,157</strong> <br> people like you who've supported <br>
+          <strong class="biggeryouare" data-aos="zoom-in">15,551</strong> <br> projects in <br>
+          <strong class="biggeryouare" data-aos="zoom-in">115+</strong> <br> countries
         </div>
         <div>
-            <img src="{{ asset('images/Aboutmapremove.png') }}" class="aboutmap" data-aos="zoom-in"/>
+            <img src="{{ asset('images/Aboutmapremove.png') }}" class="aboutmap object-cover" data-aos="zoom-in"/>
         </div>
     </div>
 </div>
 
+{{-- support us --}}
 <div class="container">
     <div class="newaboutjoin">
         <div class="newaboutjoin2s">
           <div class="wewantyoutojoinnow">
-            <span class="joinjoinjoin " data-aos="zoom-in"> Join us! </span>
-            <hr style="width: 20%; color: blue; font-weight: bolder; border: 1.5px solid blue; margin-left: 40%" data-aos="zoom-in">
-            <p class="text-black fw-bold p-4" data-aos="zoom-in">
+            <span class="joinjoinjoin py-6 md:py-4" data-aos="fade-up"> Support us! </span>
+            <hr class="my-3 w-52 md:w-72 lg:w-80 mx-auto" style="color: blue; font-weight: bolder; border: 1.5px solid blue;" data-aos="fade-up">
+            <p class="text-black fw-bold p-4 text-xs sm:text-sm md:text-base" data-aos="fade-up">
                 After watching the constant needed for quaity and well rounded education for disenfranchised, underprivileged, indigeneous and marginalization communities grow on a daily basis, Divioneone Community decided to be the change they longed to see in the education world.
             </p>
-            <hr style="width: 20%; color: blue; font-weight: bolder; border: 1.5px solid blue; margin-left: 40%" data-aos="zoom-in">
-            <button class="joinjoinjoinbut" data-aos="zoom-in">
+            <hr class="my-3 w-52 md:w-72 lg:w-80 mx-auto" style="color: blue; font-weight: bolder; border: 1.5px solid blue;" data-aos="fade-up">
+            <a href="{{ route('donationplan') }}" class="text-decoration-none">
+              <button class="joinjoinjoinbut" data-aos="fade-up">
                 Divineone Community
-            </button>
+              </button>
+            </a>
           </div>
         </div>
     </div>
@@ -135,13 +135,25 @@
         We help companies develop powerful corporate <strong>social responsibility</strong>, <strong>grantmaking,</strong> and <strong>employee engagement strategies</strong>.
       </p>
 
-      <div class="companieslogo">
-        <img src="{{ asset('images/care.jpg') }}" class="smallerlogo4" height="50" data-aos="fade-up"/>
-        <img src="{{ asset('images/CompaniesPageLogo2_EbayForCharityl.png') }}" class="" height="50" data-aos="fade-up" />
-        <img src="{{ asset('images/unicef.png') }}" class="" height="50" data-aos="fade-up"/>
-        <img src="{{ asset('images/CompassionInternationalLogo.png') }}" class="" height="50" data-aos="fade-up" />
-        <img src="{{ asset('images/CompaniesLogo1_21stCenturyFox.png') }}" class="" height="50" data-aos="fade-up" />
-        <img src="{{ asset('images/habitat.png') }}" class="" height="50" data-aos="fade-up" />
+      <div class='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mt-10 gap-2 md:gap-2 px-4' data-aos="fade-up">
+        <div class='border-2 border-skyText flex items-center justify-center px-6 py-2 cursor-pointer group'>
+            <img src="{{ asset('images/newcompany1.png')}}" alt="partner" class='w-36 h-auto group-hover:opacity-50' />
+        </div>
+        <div class='border-2 border-skyText flex items-center justify-center px-6 py-2 cursor-pointer group'>
+            <img src="{{ asset('images/newcompany6.png')}}" alt="partner1" class='w-36 h-auto group-hover:opacity-50' />
+        </div>
+        <div class='border-2 border-skyText flex items-center justify-center px-6 py-2 cursor-pointer group'>
+            <img src="{{ asset('images/newcompany3.png')}}" alt="partner2" class='w-36 h-auto group-hover:opacity-50' />
+        </div>
+        <div class='border-2 border-skyText flex items-center justify-center px-6 py-2 cursor-pointer group'>
+            <img src="{{ asset('images/newcompany8.png')}}" alt="partner3" class='w-36 h-auto group-hover:opacity-50' />
+        </div>
+        <div class='border-2 border-skyText flex items-center justify-center px-6 py-2 cursor-pointer group'>
+            <img src="{{ asset('images/newcompany4.png')}}" alt="partner4" class='w-36 h-auto group-hover:opacity-50' />
+        </div>
+        <div class='border-2 border-skyText flex items-center justify-center px-6 py-2 cursor-pointer group'>
+            <img src="{{ asset('images/newcompany10.png')}}" alt="partner5" class='w-36 h-auto group-hover:opacity-50' />
+        </div>
       </div>
       
       <div class="mt-5 buttonexex">
@@ -177,14 +189,16 @@
   <div class="smallie">
     <div class="wewantyoutojoinnow2">
       <span class="joinjoinjoin " data-aos="fade-up"> Join us! </span>
-      <hr style="width: 20%; color: white; font-weight: bolder; border: 1.5px solid white; margin-left: 40%" data-aos="fade-up">
+      <hr class="my-3 w-52 md:w-72 lg:w-80 mx-auto" style="color: white; font-weight: bolder; border: 1.5px solid white;" data-aos="fade-up">
       <p class="text-white fw-bold p-4" data-aos="fade-up">
         This amazing collaboration of The Christian society, hands-on volunteers, sponsors, donors and corporations is the driving force behind Divine goal of eradicating global poverty through global education.
       </p>
-      <hr style="width: 20%; color: white; font-weight: bolder; border: 1.5px solid white; margin-left: 40%" data-aos="fade-up">
-      <button class="joinjoinjoinbut2" data-aos="flip-up">
+      <hr class="my-3 w-52 md:w-72 lg:w-80 mx-auto" class="text-white" style="color: white; font-weight: bold; border: 1.5px solid white;" data-aos="fade-up">
+      <a href="{{ route('donationplan') }}" class="text-decoration-none">
+        <button class="joinjoinjoinbut2 px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-full" data-aos="flip-up">
           Divineone Community
-      </button>
+        </button>
+      </a>
     </div>
   </div>
 </div>
@@ -288,9 +302,10 @@
       <div class="navigations">
         <a href="{{ route('donations') }}" class="text-decoration-none text-white" data-aos="fade-up"> Home </a>
         <a class="text-decoration-none text-white" href="{{ route('about.us') }}" data-aos="fade-up"> About Us </a>
+        <a class="text-decoration-none text-white" href="{{ route('project') }}" data-aos="fade-up"> True Projects </a>
         <a class="text-decoration-none text-white" href="{{ route('donation.matters') }}" data-aos="fade-up">Why Your Donation Matters</a>
 
-        <div data-aos="fade-up">
+        {{-- <div data-aos="fade-up">
           <!-- Button trigger modal -->
           <button type="button" class="btn text-white thirdofmodal" data-bs-toggle="modal" data-bs-target="#exampleModal">
             How Divineone Community Works
@@ -334,7 +349,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> --}}
         
       </div>
     </div>
@@ -574,7 +589,7 @@
 
   </div>
   <div class="footer3 text-center">
-    <div >&copy; copyright 2023 ~ Divineone Community </div>
+    <div >&copy; copyright 2025 ~ Divineone Community </div>
   </div>
 </div>
 

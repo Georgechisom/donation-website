@@ -39,4 +39,8 @@ Route::get('/ourservice',[PagesController::class, "servicom"])->name('our.servic
 
 Route::get('/ourservice/send.message',[PagesController::class, "send_message"])->name('send.message');
 
+Route::get('/project', [PagesController::class, "trueproject"])->name('project');
+
+Route::get('/donationplan', [PagesController::class, "plans"])->name('donationplan');
+
 Route::get('/thankyou',[PagesController::class, "thank_you"])->name('thank.you');
